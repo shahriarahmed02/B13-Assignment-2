@@ -1,0 +1,202 @@
+/* =========================================
+   1. Global Resets & Variables
+   ========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-dark: #1a0b2e;
+  --accent-neon: #00ffaa;
+  --text-white: #ffffff;
+  --nav-border: rgba(65, 37, 103, 1);
+  --hero-gradient: linear-gradient(47.64deg, #f7e93f, #fb09b4, #9100f8);
+  --spotify-gradient: linear-gradient(to right, #fce043, #fb7185, #aa00ff);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+}
+
+/* =========================================
+   2. Navigation Bar
+   ========================================= */
+.navbar {
+  width: 100%;
+  max-width: 1600px;
+  height: 92px;
+  margin: 0 auto;
+  padding: 0 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-dark);
+  border-bottom: 1px solid var(--nav-border);
+}
+
+.logo {
+  color: var(--text-white);
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.clr {
+  color: rgba(251, 9, 180, 1);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: var(--text-white);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+.btn-subscribe1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: var(--hero-gradient);
+  color: var(--text-white);
+  text-decoration: none;
+  border-radius: 10000px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* =========================================
+   3. Hero Section
+   ========================================= */
+.hero-section {
+  min-height: 100vh;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./assets/hero-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-white);
+  text-align: center;
+}
+
+.content-card {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hero Image Stacking */
+.profile-wrapper {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin-bottom: 30px;
+}
+
+.profile-circle-img {
+  width: 100%;
+  height: auto;
+}
+
+.mic-icon-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  z-index: 2;
+}
+
+.badge-new {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  z-index: 3;
+  background: var(--accent-neon);
+  color: #000;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 170, 0.5);
+}
+
+/* Typography */
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin-bottom: 32px;
+  /* Removed white-space: nowrap to allow text to fit better on small screens */
+}
+
+/* =========================================
+   4. Hero Buttons (CTA Group)
+   ========================================= */
+.cta-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.btn-spotify, 
+.btn-subscribe {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0 32px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  gap: 8px;
+  white-space: nowrap;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-spotify {
+  background: var(--spotify-gradient);
+  color: #fff;
+  border: none;
+}
+
+.btn-subscribe {
+  background: transparent;
+  border: 1.5px solid var(--accent-neon);
+  color: var(--accent-neon);
+}
+
+.btn-spotify:hover, 
+.btn-subscribe:hover {
+  transform: translateY(-2px);
+}
