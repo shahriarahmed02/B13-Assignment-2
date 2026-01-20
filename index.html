@@ -12,18 +12,30 @@
 </head>
 
 <body>
-  <Section>
+  <section>
     <nav class="navbar">
       <div class="logo">
-        <img src="./assets/navlogo.png" alt="">
+        <img src="./assets/navlogo.png" alt="TechWave Logo">
       </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+      <label for="menu-toggle" class="hamburger-label">
+        <img src="./assets/hamburger-menu.png" alt="Menu" class="hamburger-icon">
+      </label>
+
       <ul class="nav-links">
         <li><a href="#">About</a></li>
         <li><a href="#">Episodes</a></li>
         <li><a href="#">Host</a></li>
-      </ul> <a href="#" class="btn-subscribe1"> Subscribe <span>&rarr;</span> </a>
+        <li class="mobile-only"><a href="#" class="btn-subscribe1">Subscribe</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#" class="btn-subscribe1"> Subscribe <span>&rarr;</span> </a>
+      </div>
     </nav>
-  </Section>
+  </section>
   <section class="hero-section">
     <div class="content-card">
       <div class="profile-wrapper"> <img src="./assets/hero-circle.png" class="profile-circle-img"> <img
