@@ -200,3 +200,75 @@ p {
 .btn-subscribe:hover {
   transform: translateY(-2px);
 }
+/*  About Section Styles */
+.about-section {
+  padding: 60px 20px;
+  background-color: #1A0B2E; /* Matching your dark theme */
+  color: #ffffff;
+  text-align: center;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto 80px auto;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.highlight-text {
+  font-weight: 500;
+  opacity: 1 !important; 
+}
+
+/* Stats Grid Layout */
+.stats-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; 
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 50px ;
+  margin: 0 200px;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #00ffa3; 
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
